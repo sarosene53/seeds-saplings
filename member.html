@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Seeds & Saplings | Member Page </title>
+    <link rel="icon" type="image" href="/media/logo1.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <section class="fullContainer banner" id="HomeSection">
+        <!-- navbar start -->
+        <header>
+          <nav class="header-nav container flex-container">
+            <h1 class="logo"><a href="index.html"><img src="media/logo.png" /></a></h1>
+            <ul class="header-menu flex-container">
+              <li><a class="header-menu-link" href="work.html">Our Work</a></li>
+              <li><a class="header-menu-link" href="aboutus.html">About us</a></li>
+              <li><a class="header-menu-link" href="support.html">Support</a></li>
+              <li><a class="header-menu-link" href="contact.html">contact us</a></li>
+              <li><a class="header-menu-link" href="member.html">Login</a></li>
+            </ul>
+            <a href="donation.html"><button class="ghost-button">Donate</button></a>
+          </nav>
+      </header>
+        <!-- navbar end -->
+
+        <section class="member-container">
+          <div class="mcontainer" id="mcontainer">
+            <!-- Sign Up form -->
+            <div class="form-container sign-up-container">
+              <form action="#">
+                <h1>Create Account</h1>
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <button>Sign Up</button><br />
+                <span>or continue sign up with</span>
+                <div class="social-container">
+                  <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                  <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </form>
+            </div>
+  
+            <!-- Sign In form -->
+            <div class="form-container sign-in-container">
+              <form action="#">
+                <h1>LOGIN</h1>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <a href="#">Forgot your password?</a>
+                <button>Sign In</button><br />
+                <span>or continue with</span>
+                <div class="social-container">
+                  <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                  <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </form>
+            </div>
+          
+            <!-- The overlay -->
+            <div class="overlay-container">
+              <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                  <h1>Welcome Back!</h1>
+                  <p>Login to your account to see your donation insights</p>
+                  <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                  <p>Enter your personal details and start journey with us</p>
+                  <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer Start -->
+        <footer class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="footer-col">
+                <ul>
+                  <li><img src="media/logo1.png" /></li>
+                  <li><h2>Seeds & Saplings</h2></li>
+                  <li><p>Plant a Tree Today,<br>Grow a Forest Tomorrow!</p></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+              <!-- This div is for the designing element -->
+              </div>
+              <div class="footer-col">
+                <h4>quick links</h4>
+                <ul>
+                  <li><a href="work.html">our work</a></li>
+                  <li><a href="aboutus.html">about us</a></li>
+                  <li><a href="support.html">Find Support</a></li>
+                  <li><a href="contact.html">contact us</a></li>
+                  <li><a href="member.html">member Zone</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>get in touch</h4>
+                <div class="social-links">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-x-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <ul>
+                    <li class="address"><p>University Road, London<br>E16 2RD</p></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <p class="copy">&copy; <span id="yearFooter">xxxx</span> Seeds & Saplings</p>
+       </footer>
+        <!-- Footer End -->
+    </div>
+
+
+    <script>
+      //Inline script for Signin/signup
+      const signUpButton = document.getElementById('signUp');
+      const signInButton = document.getElementById('signIn');
+      const mcontainer = document.getElementById('mcontainer');
+      
+      signUpButton.addEventListener('click', () => {
+        mcontainer.classList.add('right-panel-active');
+      });
+      
+      signInButton.addEventListener('click', () => {
+        mcontainer.classList.remove('right-panel-active');
+      });
+
+      //JS for Year in footer
+      var d = new Date();
+      document.getElementById("yearFooter").innerHTML = d.getFullYear();
+      </script>
+
+</body>
+</html>
