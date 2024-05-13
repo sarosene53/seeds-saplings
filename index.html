@@ -15,15 +15,15 @@
         <!-- navbar start -->
         <header>
             <nav class="header-nav container flex-container">
-              <h1 class="logo"><a href="index.html"><img src="media/logo.png" /></a></h1>
+              <h1 class="logo"><a href="index.html"><img src="media/logo.png" alt="charity-logo" /></a></h1>
               <ul class="header-menu flex-container">
-                <li><a class="header-menu-link" href="work.html">Our Work</a></li>
-                <li><a class="header-menu-link" href="aboutus.html">About us</a></li>
-                <li><a class="header-menu-link" href="support.html">Support</a></li>
-                <li><a class="header-menu-link" href="contact.html">contact us</a></li>
-                <li><a class="header-menu-link" href="member.html">Login</a></li>
+                <li><a class="header-menu-link" aria-label="work page link" href="work.html">Our Work</a></li>
+                <li><a class="header-menu-link" aria-label="about us page link" href="aboutus.html">About us</a></li>
+                <li><a class="header-menu-link" aria-label="support page link" href="support.html">Support</a></li>
+                <li><a class="header-menu-link" aria-label="contact page link" href="contact.html">contact us</a></li>
+                <li><a class="header-menu-link" aria-label="member page link" href="member.html">Login</a></li>
               </ul>
-              <a href="donation.html"><button class="ghost-button">Donate</button></a>
+              <a aria-label="donation page link" href="donation.html"><button class="ghost-button">Donate</button></a>
             </nav>
         </header>
         <!-- navbar end -->
@@ -34,7 +34,7 @@
                   <p>From seed to sapling, the journey begins. Our partners meticulously collect native tree seeds, ensuring that each species thrives. In Brazil’s Atlantic Forest, schoolchildren learn about biodiversity as they plant saplings, their tiny hands cradling the future. These young trees, once vulnerable, now stand tall, their roots intertwining with the earth.
                     Join us. Plant a tree today. Let’s sow the seeds of hope, knowing that every sapling we raise will grow into a thriving forest for generations to come.
                   </p>
-                  <h5><a href="#">Continue Reading &rarr;</a></h5>
+                  <h5><a aria-label="full news link" href="#">Continue Reading &rarr;</a></h5>
                 </li>
             </ul>
         </section>
@@ -43,7 +43,7 @@
           <div id="slider-container">
             <span onclick="slideRight()" class="btn"></span>
             <div id="slider">
-              <div class="slide"><span  id="slide1"><h1>The Blooming Courtyard</h1><p>In the heart of Hackney, an abandoned courtyard transformed into a lush oasis. Local residents received donated seeds and saplings, and together, they cultivated a riot of colors—marigolds, lavender, and sunflowers. Children now play amidst the blossoms, and elderly neighbors find solace on the benches, their hands brushing against leaves. The once-neglected space now breathes life into the community.</p></span></div>
+              <div class="slide"><span id="slide1"><h1>The Blooming Courtyard</h1><p>In the heart of Hackney, an abandoned courtyard transformed into a lush oasis. Local residents received donated seeds and saplings, and together, they cultivated a riot of colors—marigolds, lavender, and sunflowers. Children now play amidst the blossoms, and elderly neighbors find solace on the benches, their hands brushing against leaves. The once-neglected space now breathes life into the community.</p></span></div>
               <div class="slide"><span id="slide2"><h1>The Orchard of Unity</h1><p>Tower Hamlets welcomed apple, pear, and cherry saplings. Families adopted these young trees, nurturing them like children. As the seasons turned, the orchard became a gathering place. During harvest festivals, diverse cultures shared recipes: apple crumbles, pear chutneys, and cherry preserves. The fruit bore witness to laughter, love, and resilience.</p></span></div>
               <div class="slide"><span id="slide3"><h1>The Seed Swap Fiesta</h1><p>At the London Freedom Seed Bank, neighbors gathered for a lively exchange. Enthusiasts brought heirloom seeds—tomatoes, beans, and herbs. A retired gardener shared stories of her grandmother’s poppies, and a teenager marveled at rainbow chard. The seeds traveled from hand to hand, weaving connections across generations. Each packet held hope for a greener future.</p></span></div>
               <div class="slide"><span id="slide4"><h1>The Healing Herb Garden</h1><p>In Brixton, a community center received basil, mint, and chamomile saplings. Volunteers planted them in raised beds, creating a fragrant haven. People seeking solace found it here—the scent of mint easing anxiety, chamomile soothing troubled minds. The garden became a sanctuary, where healing began with every leaf plucked.</p></span></div>
@@ -61,12 +61,12 @@
         <section class="subscribe">
           <h2 class="subscribe-title">Let's keep in touch</h2>
           <p class="subscribe-copy">Subscribe to keep up with fresh news and exciting updates. We promise not to spam you!</p>
-          <div class="form">
-            <input type="email" class="form-email" placeholder="Enter your email address" />
+          <div class="form" id="subscribe-form">
+            <input type="email" aria-label="email-box" class="form-email" id="subscriber-mail" placeholder="Enter your email address" />
             <button class="form-button">Send</button>
           </div>
           <div class="notice">
-            <input type="checkbox">
+            <input type="checkbox" id="notice-chkbox" aria-label="notice-chkbox">
             <span class="notice-copy">I agree to my email address being stored and uses to recieve monthly newsletter.</span>
           </div>
         </section>
@@ -77,7 +77,7 @@
             <div class="row">
               <div class="footer-col">
                 <ul>
-                  <li><img src="media/logo1.png" /></li>
+                  <li><img src="media/logo1.png" alt="charity-logo" /></li>
                   <li><h2>Seeds & Saplings</h2></li>
                   <li><p>Plant a Tree Today,<br>Grow a Forest Tomorrow!</p></li>
                 </ul>
@@ -88,20 +88,20 @@
               <div class="footer-col">
                 <h4>quick links</h4>
                 <ul>
-                  <li><a href="work.html">our work</a></li>
-                  <li><a href="aboutus.html">about us</a></li>
-                  <li><a href="support.html">Find Support</a></li>
-                  <li><a href="contact.html">contact us</a></li>
-                  <li><a href="member.html">member Zone</a></li>
+                  <li><a aria-label="work page link" href="work.html">our work</a></li>
+                  <li><a aria-label="about page link" href="aboutus.html">about us</a></li>
+                  <li><a aria-label="support page link" href="support.html">Find Support</a></li>
+                  <li><a aria-label="contact page link" href="contact.html">contact us</a></li>
+                  <li><a aria-label="member page link" href="member.html">member Zone</a></li>
                 </ul>
               </div>
               <div class="footer-col">
                 <h4>get in touch</h4>
                 <div class="social-links">
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#"><i class="fab fa-x-twitter"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a aria-label="connect to facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a aria-label="connect to twitter" href="#"><i class="fab fa-x-twitter"></i></a>
+                  <a aria-label="connect to instagram" href="#"><i class="fab fa-instagram"></i></a>
+                  <a aria-label="connect to linkedin" href="#"><i class="fab fa-linkedin-in"></i></a>
                   <ul>
                     <li class="address"><p>University Road, London<br>E16 2RD</p></li>
                   </ul>
