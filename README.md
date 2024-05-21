@@ -1,6 +1,6 @@
 # Seeds & Saplings 🌱
 
-![Seeds & Saplings Logo](media/logo.png)
+![Seeds & Saplings Logo](media/logo1.png)
 
 ## About
 
